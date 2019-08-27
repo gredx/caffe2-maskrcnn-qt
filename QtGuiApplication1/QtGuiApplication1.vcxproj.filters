@@ -1,0 +1,2599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtGuiApplication1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="classify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\allocator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\blob_serialization.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\blob_stats.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\context.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\db.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\event.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\flags.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\init.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\net.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\net_simple.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\numa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\operator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\operator_schema.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\plan_executor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\predictor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\qtensor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\tensor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\typeid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\types.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\core\workspace.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\abs_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\concat_split_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\conv_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\conv_op_shared.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\create_scope_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\cross_entropy_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\dropout_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_add_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_div_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_div_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_linear_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_mul_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_mul_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_ops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_ops_schema.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_ops_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_sub_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_sub_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\elementwise_sum_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\filler_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\find_duplicate_elements_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\find_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\floor_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\free_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\fully_connected_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\given_tensor_fill_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\if_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\map_ops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\mean_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\mod_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\numpy_tile_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\pool_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\pool_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\relu_n_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\relu_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\reshape_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\resize_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\sequence_ops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\slice_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\softmax_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\softmax_shared.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\softmax_with_loss_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\utility_ops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\workspace_ops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\threadpool\ThreadPool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\IdWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\math_cpu.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\math_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\proto_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\proto_wrap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\signal_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\string_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\utils\thread_name.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\proto\caffe2.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\proto\caffe2_legacy.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\proto\metanet.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\proto\predictor_consts.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\proto\prof_dag.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\bbox_transform_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\box_with_nms_limit_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\collect_and_distribute_fpn_rpn_proposals_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\generate_proposals_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\roi_align_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\roi_align_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\roi_align_rotated_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\roi_align_rotated_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\sigmoid_gradient_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\caffe2\operators\sigmoid_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaskRcnn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\caffe2\core\allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\blob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\blob_serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\blob_serializer_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\blob_stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\common_omp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\event_cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\logging_is_google_glog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\logging_is_not_google_glog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\net_simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\numa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\observer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\operator_gradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\operator_schema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\plan_executor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\predictor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\qtensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\scope_guard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\static_tracepoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\tensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\typeid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\core\workspace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\abs_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\concat_split_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\conv_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\conv_op_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\conv_op_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\conv_pool_op_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\create_scope_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\cross_entropy_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\dropout_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_add_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_div_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_linear_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_mul_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_ops_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\elementwise_sub_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\filler_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\find_duplicate_elements_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\find_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\floor_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\free_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\fully_connected_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\given_tensor_fill_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\if_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\map_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\max_pool_with_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\mean_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\mod_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\numpy_tile_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\pool_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\relu_n_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\relu_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\reshape_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\resize_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\sequence_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\slice_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\softmax_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\softmax_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\softmax_with_loss_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\utility_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\threadpool\ThreadPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\threadpool\ThreadPoolCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\threadpool\WorkersPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\cblas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\conversions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\cpu_neon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\eigen_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\filler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\IdWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\math_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\math-detail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\proto_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\proto_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\signal_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\simple_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\string_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\thread_name.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\utils\thread_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Cholesky\LDLT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Cholesky\LLT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Cholesky\LLT_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\CholmodSupport\CholmodSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AltiVec\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AltiVec\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AltiVec\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AVX\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AVX\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AVX\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AVX\TypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AVX512\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\AVX512\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\CUDA\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\CUDA\Half.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\CUDA\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\CUDA\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\CUDA\PacketMathHalf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\CUDA\TypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\Default\ConjHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\Default\Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\NEON\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\NEON\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\NEON\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\SSE\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\SSE\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\SSE\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\SSE\TypeCasting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\ZVector\Complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\ZVector\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\arch\ZVector\PacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\functors\AssignmentFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\functors\BinaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\functors\NullaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\functors\StlFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\functors\TernaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\functors\UnaryFunctors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralBlockPanelKernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralMatrixMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralMatrixMatrix_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralMatrixMatrixTriangular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralMatrixMatrixTriangular_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralMatrixVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\GeneralMatrixVector_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\Parallelizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\SelfadjointMatrixMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\SelfadjointMatrixMatrix_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\SelfadjointMatrixVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\SelfadjointMatrixVector_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\SelfadjointProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\SelfadjointRank2Update.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularMatrixMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularMatrixMatrix_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularMatrixVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularMatrixVector_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularSolverMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularSolverMatrix_BLAS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\products\TriangularSolverVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\BlasUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\DisableStupidWarnings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\ForwardDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\Meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\MKL_support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\NonMPL2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\ReenableStupidWarnings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\StaticAssert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\util\XprHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\ArrayBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\ArrayWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Assign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Assign_MKL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\AssignEvaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\BandMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\BooleanRedux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CommaInitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\ConditionEstimator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CoreEvaluators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CoreIterators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CwiseBinaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CwiseNullaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CwiseTernaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CwiseUnaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\CwiseUnaryView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\DenseBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\DenseCoeffsBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\DenseStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Diagonal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\DiagonalMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\DiagonalProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Dot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\EigenBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\ForceAlignedAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Fuzzy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\GeneralProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\GenericPacketMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\GlobalFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Inverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\IO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\MapBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\MathFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\MathFunctionsImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\MatrixBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\NestByValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\NoAlias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\NumTraits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\PermutationMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\PlainObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\ProductEvaluators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Redux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Ref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Replicate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\ReturnByValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Reverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\SelfAdjointView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\SelfCwiseBinaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\SolverBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\SolveTriangular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\StableNorm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Stride.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Swap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Transpose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Transpositions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\TriangularMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\VectorBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\VectorwiseOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Core\Visitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\ComplexEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\ComplexSchur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\ComplexSchur_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\EigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\GeneralizedEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\GeneralizedSelfAdjointEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\HessenbergDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\MatrixBaseEigenvalues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\RealQZ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\RealSchur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\RealSchur_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\SelfAdjointEigenSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\SelfAdjointEigenSolver_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Eigenvalues\Tridiagonalization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\arch\Geometry_SSE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\AlignedBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\AngleAxis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\EulerAngles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Homogeneous.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Hyperplane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\OrthoMethods.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\ParametrizedLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Rotation2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\RotationBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Scaling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Translation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Geometry\Umeyama.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Householder\BlockHouseholder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Householder\Householder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Householder\HouseholderSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\BasicPreconditioners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\BiCGSTAB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\ConjugateGradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\IncompleteCholesky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\IncompleteLUT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\IterativeSolverBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\LeastSquareConjugateGradient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\IterativeLinearSolvers\SolveWithGuess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\Jacobi\Jacobi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\LU\arch\Inverse_SSE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\LU\Determinant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\LU\FullPivLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\LU\InverseImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\LU\PartialPivLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\LU\PartialPivLU_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\MetisSupport\MetisSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\blas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\Kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\lapack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\lapacke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\lapacke_mangling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\misc\RealSvd2x2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\OrderingMethods\Amd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\OrderingMethods\Eigen_Colamd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\OrderingMethods\Ordering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\PardisoSupport\PardisoSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\PaStiXSupport\PaStiXSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\ArrayCwiseBinaryOps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\ArrayCwiseUnaryOps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\BlockMethods.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\CommonCwiseBinaryOps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\CommonCwiseUnaryOps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\MatrixCwiseBinaryOps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\plugins\MatrixCwiseUnaryOps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\QR\ColPivHouseholderQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\QR\ColPivHouseholderQR_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\QR\CompleteOrthogonalDecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\QR\FullPivHouseholderQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\QR\HouseholderQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\QR\HouseholderQR_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCholesky\SimplicialCholesky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCholesky\SimplicialCholesky_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\AmbiVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\CompressedStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\ConservativeSparseSparseProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\MappedSparseMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseAssign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseColEtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseCompressedBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseCwiseBinaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseCwiseUnaryOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseDenseProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseDiagonalProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseDot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseFuzzy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseMatrixBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparsePermutation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseRedux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseRef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseSelfAdjointView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseSolverBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseSparseProductWithPruning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseTranspose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseTriangularView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\SparseView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseCore\TriangularSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_column_bmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_column_dfs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_copy_to_ucol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_gemm_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_heap_relax_snode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_kernel_bmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_panel_bmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_panel_dfs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_pivotL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_pruneL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_relax_snode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_Structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_SupernodalMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLU_Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseLU\SparseLUImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SparseQR\SparseQR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SPQRSupport\SuiteSparseQRSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\StlSupport\details.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\StlSupport\StdDeque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\StlSupport\StdList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\StlSupport\StdVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SuperLUSupport\SuperLUSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SVD\BDCSVD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SVD\JacobiSVD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SVD\JacobiSVD_LAPACKE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SVD\SVDBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\SVD\UpperBidiagonalization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Eigen\src\UmfPackSupport\UmfPackSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\calib3d\calib3d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\calib3d\calib3d_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\detail\color_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\detail\reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\detail\reduce_key_val.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\detail\transform_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\detail\type_traits_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\detail\vec_distance_detail.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\block.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\border_interpolate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\color.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\datamov_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\dynamic_smem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\emulation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\filters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\funcattrib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\functional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\limits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\saturate_cast.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\scan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\simd_functions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\type_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\vec_distance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\vec_math.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\vec_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\warp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\warp_reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda\warp_shuffle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\hal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_avx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_cpp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_neon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_sse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_sse_em.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\hal\intrin_vsx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\autogenerated\opencl_clamdblas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\autogenerated\opencl_clamdfft.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_clamdblas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_clamdfft.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_gl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_svm_20.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_svm_definitions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\runtime\opencl_svm_hsa_extension.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\ocl_defs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\opencl_info.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opencl\opencl_svm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\utils\filesystem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\utils\logger.defines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\utils\logger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\utils\trace.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\affine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\bindings_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\bufferpool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\check.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\core_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda_stream_accessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cuda_types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cv_cpu_dispatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cv_cpu_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cvdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cvstd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cvstd.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\cvstd_wrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\directx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\eigen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\fast_math.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\mat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\mat.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\matx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\neon_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\ocl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\ocl_genbase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\opengl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\operations.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\optim.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\ovx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\persistence.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\saturate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\softfloat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\sse_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\types_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\va_intel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core\vsx_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\all_layers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\dict.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\dnn.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\dnn.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\layer.details.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\layer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\shape_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn\version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\features2d\hal\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\features2d\features2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\all_indices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\autotuned_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\composite_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\dist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\dummy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\dynamic_bitset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\flann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\flann_base.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\general.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\ground_truth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\hierarchical_clustering_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\index_testing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\kdtree_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\kdtree_single_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\kmeans_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\linear_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\lsh_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\lsh_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\miniflann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\nn_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\object_factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\result_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\sampling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\saving.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\simplex_downhill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\cpu\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\cpu\gcpukernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\cpu\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\fluid\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\fluid\gfluidbuffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\fluid\gfluidkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\fluid\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gpu\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gpu\ggpukernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gpu\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\ocl\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\ocl\goclkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\ocl\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\assert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\convert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\cvdefs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\exports.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\mat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\saturate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\scalar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\own\types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\util\any.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\util\compiler_hints.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\util\optional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\util\throw.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\util\util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\util\variant.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\garg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\garray.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gcall.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gcommon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gcompiled.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gcompoundkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gcomputation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gkernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gmat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gmetaarg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gproto.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gscalar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gtype_traits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\gtyped.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\opencv_includes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi\operators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\highgui\highgui.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\highgui\highgui_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgcodecs\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgcodecs\imgcodecs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgcodecs\imgcodecs_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgcodecs\ios.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\detail\gcgraph.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\hal\hal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\hal\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\imgproc_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\types_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\ml\ml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\ml\ml.inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect\detection_based_tracker.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect\objdetect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo\cuda.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo\photo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\autocalib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\blenders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\exposure_compensate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\matchers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\motion_estimators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\seam_finders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\timelapsers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\util_inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\warpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\detail\warpers_inl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching\warpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\background_segm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\tracking.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\video.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\legacy\constants_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\cap_ios.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\registry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\videoio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\videoio_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\calib3d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\core.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\dnn.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\features2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\flann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\gapi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\highgui.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgcodecs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\ml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\opencv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\stitching.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\world.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\stl_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\stringpiece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\template_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\proto\caffe2.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\proto\caffe2_legacy.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\proto\metanet.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\proto\predictor_consts.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\proto\prof_dag.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\cpp\cpp_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\csharp\csharp_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\csharp\csharp_names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\java\java_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\java\java_names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\js\js_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\js\well_known_types_embed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\objectivec\objectivec_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\objectivec\objectivec_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\php\php_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\python\python_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\ruby\ruby_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\code_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\command_line_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\importer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\compiler\plugin.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\coded_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\gzip_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\strtod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\zero_copy_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\zero_copy_stream_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\io\zero_copy_stream_impl_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\bytestream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\casts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\fastmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\once.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\platform_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\stubs\strutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\delimited_message_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\field_comparator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\field_mask_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\json_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\message_differencer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\time_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\type_resolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\util\type_resolver_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\any.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\api.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\arena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\arena_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\arenastring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\descriptor.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\descriptor_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\duration.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\dynamic_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\empty.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\extension_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\extension_set_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\field_mask.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\generated_enum_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\generated_enum_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\generated_message_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\generated_message_table_driven.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\generated_message_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\has_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\implicit_weak_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\inlined_string_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map_entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map_entry_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map_field_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map_field_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\map_type_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\message_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\metadata_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\parse_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\reflection_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\repeated_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\source_context.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\struct.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\text_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\timestamp.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\type.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\unknown_field_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\wire_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\wire_format_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\wire_format_lite_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\google\protobuf\wrappers.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="caffe2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\bbox_transform_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\box_with_nms_limit_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\collect_and_distribute_fpn_rpn_proposals_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\generate_proposals_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\generate_proposals_op_util_boxes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\generate_proposals_op_util_nms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\roi_align_gradient_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\roi_align_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\roi_align_rotated_gradient_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\roi_align_rotated_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\caffe2\operators\sigmoid_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QtGuiApplication1.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="classify.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MaskRcnn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtGuiApplication1.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="classify.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="MaskRcnn.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtGuiApplication1.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtGuiApplication1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\google\protobuf\port_def.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\google\protobuf\port_undef.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="lib\openblas.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\libprotobuf.lib" />
+    <Library Include="lib\libprotobuf-lite.lib" />
+    <Library Include="lib\libprotoc.lib" />
+    <Library Include="lib\openblas035.lib" />
+    <Library Include="lib\opencv_world401.lib" />
+  </ItemGroup>
+</Project>

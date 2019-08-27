@@ -1,0 +1,893 @@
+device_option {
+		device_type: 0
+	} 
+name: "predict"
+op {
+  input: "data"
+  input: "conv1_w"
+  input: "conv1_b"
+  output: "conv1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 2
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "conv1"
+  output: "conv1"
+  type: "Relu"
+}
+op {
+  input: "conv1"
+  output: "pool1"
+  type: "MaxPool"
+  arg {
+    name: "stride"
+    i: 2
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+  arg {
+    name: "legacy_pad"
+    i: 3
+  }
+}
+op {
+  input: "pool1"
+  input: "fire2/squeeze1x1_w"
+  input: "fire2/squeeze1x1_b"
+  output: "fire2/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire2/squeeze1x1"
+  output: "fire2/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire2/squeeze1x1"
+  input: "fire2/expand1x1_w"
+  input: "fire2/expand1x1_b"
+  output: "fire2/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire2/expand1x1"
+  output: "fire2/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire2/squeeze1x1"
+  input: "fire2/expand3x3_w"
+  input: "fire2/expand3x3_b"
+  output: "fire2/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire2/expand3x3"
+  output: "fire2/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire2/expand1x1"
+  input: "fire2/expand3x3"
+  output: "fire2/concat"
+  output: "_fire2/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire2/concat"
+  input: "fire3/squeeze1x1_w"
+  input: "fire3/squeeze1x1_b"
+  output: "fire3/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire3/squeeze1x1"
+  output: "fire3/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire3/squeeze1x1"
+  input: "fire3/expand1x1_w"
+  input: "fire3/expand1x1_b"
+  output: "fire3/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire3/expand1x1"
+  output: "fire3/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire3/squeeze1x1"
+  input: "fire3/expand3x3_w"
+  input: "fire3/expand3x3_b"
+  output: "fire3/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire3/expand3x3"
+  output: "fire3/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire3/expand1x1"
+  input: "fire3/expand3x3"
+  output: "fire3/concat"
+  output: "_fire3/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire3/concat"
+  output: "pool3"
+  type: "MaxPool"
+  arg {
+    name: "stride"
+    i: 2
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+  arg {
+    name: "legacy_pad"
+    i: 3
+  }
+}
+op {
+  input: "pool3"
+  input: "fire4/squeeze1x1_w"
+  input: "fire4/squeeze1x1_b"
+  output: "fire4/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire4/squeeze1x1"
+  output: "fire4/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire4/squeeze1x1"
+  input: "fire4/expand1x1_w"
+  input: "fire4/expand1x1_b"
+  output: "fire4/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire4/expand1x1"
+  output: "fire4/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire4/squeeze1x1"
+  input: "fire4/expand3x3_w"
+  input: "fire4/expand3x3_b"
+  output: "fire4/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire4/expand3x3"
+  output: "fire4/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire4/expand1x1"
+  input: "fire4/expand3x3"
+  output: "fire4/concat"
+  output: "_fire4/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire4/concat"
+  input: "fire5/squeeze1x1_w"
+  input: "fire5/squeeze1x1_b"
+  output: "fire5/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire5/squeeze1x1"
+  output: "fire5/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire5/squeeze1x1"
+  input: "fire5/expand1x1_w"
+  input: "fire5/expand1x1_b"
+  output: "fire5/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire5/expand1x1"
+  output: "fire5/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire5/squeeze1x1"
+  input: "fire5/expand3x3_w"
+  input: "fire5/expand3x3_b"
+  output: "fire5/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire5/expand3x3"
+  output: "fire5/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire5/expand1x1"
+  input: "fire5/expand3x3"
+  output: "fire5/concat"
+  output: "_fire5/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire5/concat"
+  output: "pool5"
+  type: "MaxPool"
+  arg {
+    name: "stride"
+    i: 2
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+  arg {
+    name: "legacy_pad"
+    i: 3
+  }
+}
+op {
+  input: "pool5"
+  input: "fire6/squeeze1x1_w"
+  input: "fire6/squeeze1x1_b"
+  output: "fire6/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire6/squeeze1x1"
+  output: "fire6/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire6/squeeze1x1"
+  input: "fire6/expand1x1_w"
+  input: "fire6/expand1x1_b"
+  output: "fire6/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire6/expand1x1"
+  output: "fire6/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire6/squeeze1x1"
+  input: "fire6/expand3x3_w"
+  input: "fire6/expand3x3_b"
+  output: "fire6/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire6/expand3x3"
+  output: "fire6/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire6/expand1x1"
+  input: "fire6/expand3x3"
+  output: "fire6/concat"
+  output: "_fire6/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire6/concat"
+  input: "fire7/squeeze1x1_w"
+  input: "fire7/squeeze1x1_b"
+  output: "fire7/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire7/squeeze1x1"
+  output: "fire7/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire7/squeeze1x1"
+  input: "fire7/expand1x1_w"
+  input: "fire7/expand1x1_b"
+  output: "fire7/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire7/expand1x1"
+  output: "fire7/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire7/squeeze1x1"
+  input: "fire7/expand3x3_w"
+  input: "fire7/expand3x3_b"
+  output: "fire7/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire7/expand3x3"
+  output: "fire7/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire7/expand1x1"
+  input: "fire7/expand3x3"
+  output: "fire7/concat"
+  output: "_fire7/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire7/concat"
+  input: "fire8/squeeze1x1_w"
+  input: "fire8/squeeze1x1_b"
+  output: "fire8/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire8/squeeze1x1"
+  output: "fire8/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire8/squeeze1x1"
+  input: "fire8/expand1x1_w"
+  input: "fire8/expand1x1_b"
+  output: "fire8/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire8/expand1x1"
+  output: "fire8/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire8/squeeze1x1"
+  input: "fire8/expand3x3_w"
+  input: "fire8/expand3x3_b"
+  output: "fire8/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire8/expand3x3"
+  output: "fire8/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire8/expand1x1"
+  input: "fire8/expand3x3"
+  output: "fire8/concat"
+  output: "_fire8/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire8/concat"
+  input: "fire9/squeeze1x1_w"
+  input: "fire9/squeeze1x1_b"
+  output: "fire9/squeeze1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire9/squeeze1x1"
+  output: "fire9/squeeze1x1"
+  type: "Relu"
+}
+op {
+  input: "fire9/squeeze1x1"
+  input: "fire9/expand1x1_w"
+  input: "fire9/expand1x1_b"
+  output: "fire9/expand1x1"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "fire9/expand1x1"
+  output: "fire9/expand1x1"
+  type: "Relu"
+}
+op {
+  input: "fire9/squeeze1x1"
+  input: "fire9/expand3x3_w"
+  input: "fire9/expand3x3_b"
+  output: "fire9/expand3x3"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 1
+  }
+  arg {
+    name: "kernel"
+    i: 3
+  }
+}
+op {
+  input: "fire9/expand3x3"
+  output: "fire9/expand3x3"
+  type: "Relu"
+}
+op {
+  input: "fire9/expand1x1"
+  input: "fire9/expand3x3"
+  output: "fire9/concat"
+  output: "_fire9/concat_dims"
+  type: "Concat"
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+}
+op {
+  input: "fire9/concat"
+  output: "fire9/concat"
+  output: "_fire9/concat_mask"
+  type: "Dropout"
+  arg {
+    name: "ratio"
+    f: 0.5
+  }
+  arg {
+    name: "is_test"
+    i: 1
+  }
+}
+op {
+  input: "fire9/concat"
+  input: "conv10_w"
+  input: "conv10_b"
+  output: "conv10"
+  type: "Conv"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 1
+  }
+}
+op {
+  input: "conv10"
+  output: "conv10"
+  type: "Relu"
+}
+op {
+  input: "conv10"
+  output: "pool10"
+  type: "AveragePool"
+  arg {
+    name: "stride"
+    i: 1
+  }
+  arg {
+    name: "pad"
+    i: 0
+  }
+  arg {
+    name: "kernel"
+    i: 0
+  }
+  arg {
+    name: "order"
+    s: "NCHW"
+  }
+  arg {
+    name: "legacy_pad"
+    i: 3
+  }
+  arg {
+    name: "global_pooling"
+    i: 1
+  }
+}
+op {
+  input: "pool10"
+  output: "softmaxout"
+  type: "Softmax"
+}
+external_input: "data"
+external_input: "conv1_w"
+external_input: "conv1_b"
+external_input: "fire2/squeeze1x1_w"
+external_input: "fire2/squeeze1x1_b"
+external_input: "fire2/expand1x1_w"
+external_input: "fire2/expand1x1_b"
+external_input: "fire2/expand3x3_w"
+external_input: "fire2/expand3x3_b"
+external_input: "fire3/squeeze1x1_w"
+external_input: "fire3/squeeze1x1_b"
+external_input: "fire3/expand1x1_w"
+external_input: "fire3/expand1x1_b"
+external_input: "fire3/expand3x3_w"
+external_input: "fire3/expand3x3_b"
+external_input: "fire4/squeeze1x1_w"
+external_input: "fire4/squeeze1x1_b"
+external_input: "fire4/expand1x1_w"
+external_input: "fire4/expand1x1_b"
+external_input: "fire4/expand3x3_w"
+external_input: "fire4/expand3x3_b"
+external_input: "fire5/squeeze1x1_w"
+external_input: "fire5/squeeze1x1_b"
+external_input: "fire5/expand1x1_w"
+external_input: "fire5/expand1x1_b"
+external_input: "fire5/expand3x3_w"
+external_input: "fire5/expand3x3_b"
+external_input: "fire6/squeeze1x1_w"
+external_input: "fire6/squeeze1x1_b"
+external_input: "fire6/expand1x1_w"
+external_input: "fire6/expand1x1_b"
+external_input: "fire6/expand3x3_w"
+external_input: "fire6/expand3x3_b"
+external_input: "fire7/squeeze1x1_w"
+external_input: "fire7/squeeze1x1_b"
+external_input: "fire7/expand1x1_w"
+external_input: "fire7/expand1x1_b"
+external_input: "fire7/expand3x3_w"
+external_input: "fire7/expand3x3_b"
+external_input: "fire8/squeeze1x1_w"
+external_input: "fire8/squeeze1x1_b"
+external_input: "fire8/expand1x1_w"
+external_input: "fire8/expand1x1_b"
+external_input: "fire8/expand3x3_w"
+external_input: "fire8/expand3x3_b"
+external_input: "fire9/squeeze1x1_w"
+external_input: "fire9/squeeze1x1_b"
+external_input: "fire9/expand1x1_w"
+external_input: "fire9/expand1x1_b"
+external_input: "fire9/expand3x3_w"
+external_input: "fire9/expand3x3_b"
+external_input: "conv10_w"
+external_input: "conv10_b"
+external_output: "softmaxout"

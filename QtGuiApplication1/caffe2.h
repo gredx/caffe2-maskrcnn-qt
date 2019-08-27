@@ -1,0 +1,27 @@
+#pragma once
+#include "caffe2/core/flags.h"
+#include "caffe2/core/init.h"
+#include "caffe2/core/predictor.h"
+#include "caffe2/utils/proto_utils.h"
+#include "caffe2/utils/math.h"
+#include <opencv2/opencv.hpp>
+#include <qmessagebox.h>
+#include <algorithm>
+#include <qstandarditemmodel.h>
+#include <qstringlistmodel.h>
+#include <Windows.h>
+#include <thread>
+#include <regex>
+#include <string>
+#include <fstream>
+#include <QWidget>
+#include <QLabel>
+#include <vector>
+#include <memory>
+#include "QFileDialog"
+#include <iostream>
+#include <QPainter>
+#include <memory>
+#include <QMessageBox>
+#include <QSize>
+using namespace std;
